@@ -272,7 +272,7 @@ If using hiera, there's a `docker::run_instance` class you can configure, for ex
   classes:
     - docker::run_instance
 
-  docker::run_instance::instance:
+  docker::run_instance:
     helloworld:
       image: 'ubuntu:precise'
       command: '/bin/sh -c "while true; do echo hello world; sleep 1; done"'
